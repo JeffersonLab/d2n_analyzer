@@ -6,6 +6,7 @@ analyzer
 evio
 *Dict.[Ch]
 *Dict.cxx
+ha_compiledata.h
 
 # scons stuff
 config.log
