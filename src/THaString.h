@@ -1,0 +1,41 @@
+#ifndef ROOT_THaString
+#define ROOT_THaString
+
+//**********************************************************************
+//
+//       THaString.h  (interface)
+//
+// Useful string functions
+//
+////////////////////////////////////////////////////////////////////////
+
+#include <string>
+#include <vector>
+
+using std::string;
+using std::vector;
+
+namespace THaString {
+  // case insensitive compare
+  int CmpNoCase( const string&, const string& );
+
+  // split on whitespace
+  vector<string> Split( const string& );
+
+  // conversion to unsigned interpreting as hex
+  unsigned int Hex( const string& );
+
+  // return lower case copy
+  string    ToLower( const string& );
+
+  // return upper case copy
+  string    ToUpper( const string& );
+
+  // convert this string to lower case
+  void      Lower( string& );
+
+  // convert this string to upper case
+  void      Upper( string& );
+}
+
+#endif
